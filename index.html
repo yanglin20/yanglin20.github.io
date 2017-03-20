@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>项目</title>
+    <meta charset="UTF-8">
+    <title>项目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-	<ul>
-		<li><a href="https://yanglin20.github.io/zhangzhiwang/">掌职网</a></li>
-		<li><a href="https://yanglin20.github.io/fangbianwang/">方便网</a></li>
-		<li><a href="https://yanglin20.github.io/hello/">名校无忧</a></li>
-	</ul>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="first-slide">
+                    <h2>欢迎来到yanglin的首页</h2>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">
+                <ul>
+                    <li><a href="https://yanglin20.github.io/zhangzhiwang/">掌职网</a></li>
+                    <li><a href="https://yanglin20.github.io/fangbianwang/">方便网</a></li>
+                    <li><a href="https://yanglin20.github.io/hello/">名校无忧</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+ 
+
+    <!-- Swiper JS -->
+    <script src="swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        mousewheelControl:true,
+    });
+    </script>
+
 </body>
-</html>a
+
+</html>
